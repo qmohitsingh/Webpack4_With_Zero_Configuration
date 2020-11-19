@@ -1,0 +1,19 @@
+{
+  "name": "webpack4_with_zero_configuration",
+  "version": "1.0.0",
+  "description": "Bundled JavaScript file will be created without any Webpack configuration.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/qmohitsingh/Webpack4_With_Zero_Configuration.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/qmohitsingh/Webpack4_With_Zero_Configuration/issues"
+  },
+  "homepage": "https://github.com/qmohitsingh/Webpack4_With_Zero_Configuration#readme"
+}
