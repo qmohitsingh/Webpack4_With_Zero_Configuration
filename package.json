@@ -4,7 +4,9 @@
   "description": "Bundled JavaScript file will be created without any Webpack configuration.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "NODE_ENV=development webpack-dev-server --config webpack.config.js  --open --hot",
+    "prebuild": "rimraf ./build && mkdir build",
+    "build": "webpack --config webpack.config.prod.js"
   },
   "repository": {
     "type": "git",
@@ -15,5 +17,28 @@
   "bugs": {
     "url": "https://github.com/qmohitsingh/Webpack4_With_Zero_Configuration/issues"
   },
-  "homepage": "https://github.com/qmohitsingh/Webpack4_With_Zero_Configuration#readme"
+  "homepage": "https://github.com/qmohitsingh/Webpack4_With_Zero_Configuration#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-router-dom": "^5.2.0"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "babel": {
+    "presets": [
+      "babel-preset-react-app"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/preset-react": "^7.12.7",
+    "babel-loader": "^8.2.1",
+    "babel-preset-react-app": "^10.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^4.29.6",
+    "webpack-cli": "3.3.0",
+    "webpack-dev-server": "^3.11.0"
+  }
 }
